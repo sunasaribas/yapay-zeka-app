@@ -40,9 +40,9 @@ namespace YapayZekaTemelleri
             this.label6 = new System.Windows.Forms.Label();
             this.TxtBuyPrice = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.TxtStock = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.TxtMark = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.TxtName = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
@@ -82,9 +82,9 @@ namespace YapayZekaTemelleri
             this.panel1.Controls.Add(this.label6);
             this.panel1.Controls.Add(this.TxtBuyPrice);
             this.panel1.Controls.Add(this.label5);
-            this.panel1.Controls.Add(this.textBox3);
+            this.panel1.Controls.Add(this.TxtStock);
             this.panel1.Controls.Add(this.label4);
-            this.panel1.Controls.Add(this.textBox2);
+            this.panel1.Controls.Add(this.TxtMark);
             this.panel1.Controls.Add(this.label3);
             this.panel1.Controls.Add(this.TxtName);
             this.panel1.Controls.Add(this.label2);
@@ -93,7 +93,7 @@ namespace YapayZekaTemelleri
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(267, 511);
+            this.panel1.Size = new System.Drawing.Size(267, 456);
             this.panel1.TabIndex = 0;
             // 
             // comboBox1
@@ -182,12 +182,12 @@ namespace YapayZekaTemelleri
             this.label5.TabIndex = 1;
             this.label5.Text = "Buy Price:";
             // 
-            // textBox3
+            // TxtStock
             // 
-            this.textBox3.Location = new System.Drawing.Point(94, 112);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(152, 27);
-            this.textBox3.TabIndex = 2;
+            this.TxtStock.Location = new System.Drawing.Point(94, 112);
+            this.TxtStock.Name = "TxtStock";
+            this.TxtStock.Size = new System.Drawing.Size(152, 27);
+            this.TxtStock.TabIndex = 2;
             // 
             // label4
             // 
@@ -198,12 +198,12 @@ namespace YapayZekaTemelleri
             this.label4.TabIndex = 1;
             this.label4.Text = "Stock:";
             // 
-            // textBox2
+            // TxtMark
             // 
-            this.textBox2.Location = new System.Drawing.Point(94, 79);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(152, 27);
-            this.textBox2.TabIndex = 2;
+            this.TxtMark.Location = new System.Drawing.Point(94, 79);
+            this.TxtMark.Name = "TxtMark";
+            this.TxtMark.Size = new System.Drawing.Size(152, 27);
+            this.TxtMark.TabIndex = 2;
             // 
             // label3
             // 
@@ -251,7 +251,7 @@ namespace YapayZekaTemelleri
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(267, 0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(809, 56);
+            this.panel2.Size = new System.Drawing.Size(786, 56);
             this.panel2.TabIndex = 1;
             // 
             // button4
@@ -323,7 +323,7 @@ namespace YapayZekaTemelleri
             this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel3.Location = new System.Drawing.Point(267, 56);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(809, 167);
+            this.panel3.Size = new System.Drawing.Size(786, 167);
             this.panel3.TabIndex = 2;
             // 
             // dataGridView1
@@ -332,16 +332,16 @@ namespace YapayZekaTemelleri
             this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dataGridView1.Location = new System.Drawing.Point(0, 0);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(809, 167);
+            this.dataGridView1.Size = new System.Drawing.Size(786, 167);
             this.dataGridView1.TabIndex = 0;
             // 
             // panel4
             // 
             this.panel4.Controls.Add(this.pictureBox1);
             this.panel4.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel4.Location = new System.Drawing.Point(267, 350);
+            this.panel4.Location = new System.Drawing.Point(267, 295);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(809, 161);
+            this.panel4.Size = new System.Drawing.Size(786, 161);
             this.panel4.TabIndex = 3;
             // 
             // pictureBox1
@@ -360,7 +360,7 @@ namespace YapayZekaTemelleri
             this.panel5.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel5.Location = new System.Drawing.Point(267, 223);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(809, 112);
+            this.panel5.Size = new System.Drawing.Size(786, 112);
             this.panel5.TabIndex = 4;
             // 
             // richTextBox1
@@ -385,7 +385,7 @@ namespace YapayZekaTemelleri
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1076, 511);
+            this.ClientSize = new System.Drawing.Size(1053, 456);
             this.Controls.Add(this.panel5);
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.panel3);
@@ -422,9 +422,9 @@ namespace YapayZekaTemelleri
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.TextBox TxtBuyPrice;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox TxtStock;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox TxtMark;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox TxtName;
         private System.Windows.Forms.Label label2;
