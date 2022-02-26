@@ -29,12 +29,13 @@ namespace YapayZekaTemelleri
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.panel1 = new System.Windows.Forms.Panel();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.maskedTextBox1 = new System.Windows.Forms.MaskedTextBox();
             this.label9 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
-            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.TxtCategory = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.TxtSellPrice = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
@@ -61,6 +62,7 @@ namespace YapayZekaTemelleri
             this.panel5 = new System.Windows.Forms.Panel();
             this.richTextBox1 = new System.Windows.Forms.RichTextBox();
             this.label10 = new System.Windows.Forms.Label();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -76,7 +78,7 @@ namespace YapayZekaTemelleri
             this.panel1.Controls.Add(this.maskedTextBox1);
             this.panel1.Controls.Add(this.label9);
             this.panel1.Controls.Add(this.label8);
-            this.panel1.Controls.Add(this.textBox6);
+            this.panel1.Controls.Add(this.TxtCategory);
             this.panel1.Controls.Add(this.label7);
             this.panel1.Controls.Add(this.TxtSellPrice);
             this.panel1.Controls.Add(this.label6);
@@ -106,6 +108,7 @@ namespace YapayZekaTemelleri
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(152, 28);
             this.comboBox1.TabIndex = 4;
+            this.comboBox1.BackColorChanged += new System.EventHandler(this.comboBox1_BackColorChanged);
             // 
             // maskedTextBox1
             // 
@@ -115,6 +118,7 @@ namespace YapayZekaTemelleri
             this.maskedTextBox1.Size = new System.Drawing.Size(152, 27);
             this.maskedTextBox1.TabIndex = 3;
             this.maskedTextBox1.ValidatingType = typeof(System.DateTime);
+            this.maskedTextBox1.BackColorChanged += new System.EventHandler(this.maskedTextBox1_BackColorChanged);
             // 
             // label9
             // 
@@ -134,12 +138,12 @@ namespace YapayZekaTemelleri
             this.label8.TabIndex = 1;
             this.label8.Text = "Date:";
             // 
-            // textBox6
+            // TxtCategory
             // 
-            this.textBox6.Location = new System.Drawing.Point(94, 211);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(152, 27);
-            this.textBox6.TabIndex = 2;
+            this.TxtCategory.Location = new System.Drawing.Point(94, 211);
+            this.TxtCategory.Name = "TxtCategory";
+            this.TxtCategory.Size = new System.Drawing.Size(152, 27);
+            this.TxtCategory.TabIndex = 2;
             // 
             // label7
             // 
@@ -380,6 +384,11 @@ namespace YapayZekaTemelleri
             this.label10.Size = new System.Drawing.Size(94, 20);
             this.label10.TabIndex = 1;
             this.label10.Text = "Please Wait...";
+            this.label10.TextChanged += new System.EventHandler(this.label10_TextChanged);
+            // 
+            // timer1
+            // 
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
             // Form1
             // 
@@ -416,7 +425,7 @@ namespace YapayZekaTemelleri
         private System.Windows.Forms.MaskedTextBox maskedTextBox1;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.TextBox TxtCategory;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.TextBox TxtSellPrice;
         private System.Windows.Forms.Label label6;
@@ -443,6 +452,7 @@ namespace YapayZekaTemelleri
         private System.Windows.Forms.RichTextBox richTextBox1;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Button btnListen;
+        private System.Windows.Forms.Timer timer1;
     }
 }
 
